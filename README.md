@@ -1,7 +1,23 @@
-# nft-eth-comp
-
-Non-fungible tokens (NFTs) are one of the assets that are largely denominated in cryptocurrency. Typically, NFTs on the Ethereum blockchain are bought and sold on major marketplaces using ETH, while those on Solana are largely traded in SOL. This has given rise to the belief that crypto-assets, in this case, serve as a true unit of account.
-
-Drawing from large datasets on NFT sales (particularly a16z's [NFT Analyst Starter Pack](https://github.com/a16z/nft-analyst-starter-pack)), we investigate the relationship between major NFT project floor prices and fluctuations in the unit of account's exchange rate. How do NFT speculators *actually* price these assets?
+# discord-validation-bot
 
 A project by Roman Ugarte and Mark Xu.
+
+## overview
+
+An automated validation process for verifying emails of a particular subdomain and assigning a Discord role.
+
+## v1
+
+The following basic flow:
+* Bot sends individualized, private welcome messages to new joiners of the Harvard Blockchain server.
+* Bot asks for a valid "harvard.edu" email address, user responds.
+* Bot sends an email to the provided email address with an eight-digit confirmation code.
+* User sends confirmation code in Discord.
+* If code matches, user is given the "Harvard" Discord role.
+
+## v2
+Additional features to be added:
+* Store user information (name, Discord username, email) in a database.
+* Add verified emails to the club's Google Group.
+* Similar (semi-manual) filtering flow for "Alum" and "Fren" roles.
+* Customizability for other organizations (e.g., custom subdomains and Discord roles).

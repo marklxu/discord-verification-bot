@@ -41,7 +41,7 @@ And for Windows:
 
 Storing a local API key (not for sharing publicly):
 
-    echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+    echo "export SENDGRID_API_KEY='[hidden]'" > sendgrid.env
     echo "sendgrid.env" >> .gitignore
     source ./sendgrid.env
     pip install sendgrid
